@@ -25,7 +25,7 @@ namespace Feedback
             this.code = code;
         }
 
-        public static Result<T> CreateSucces(T value, string message = null, int code = 0)
+        public static Result<T> CreateSuccess(T value, string message = null, int code = 0)
         {
             return new Result<T>(true, value, message, code);
         }
